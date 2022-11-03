@@ -132,6 +132,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 42BCD8991645AFC500683BF7;
@@ -245,7 +246,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				"OTHER_CPLUSPLUSFLAGS[arch=*]" = "-Wno-inconsistent-missing-override";
 				PRESERVE_DEAD_CODE_INITS_AND_TERMS = YES;
-				SDKROOT = macosx10.11;
+				SDKROOT = macosx12.3;
 				SYMROOT = "${SRCROOT}/build";
 			};
 			name = Debug;
@@ -299,7 +300,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				"OTHER_CPLUSPLUSFLAGS[arch=*]" = "-Wno-inconsistent-missing-override";
 				PRESERVE_DEAD_CODE_INITS_AND_TERMS = YES;
-				SDKROOT = macosx10.11;
+				SDKROOT = macosx12.3;
 				SYMROOT = "${SRCROOT}/build";
 			};
 			name = Release;

@@ -11,15 +11,14 @@
 -include localconfig.mk
 
 # Can be set from the environment:
-HORNDIS_XCODE ?= /Applications/Xcode*$(XCODE_VER).app
+HORNDIS_XCODE ?= /Applications/Xcode.app
 
-XCODE_VER ?= 7.3.1
 XCODEBUILD ?= $(wildcard $(HORNDIS_XCODE)/Contents/Developer/usr/bin/xcodebuild)
 
 ifeq (,$(XCODEBUILD))
     $(error Cannot find xcodebuild under $(HORNDIS_XCODE). Please either \
-    	download Xcode $(XCODE_VER) from: "https://developer.apple.com/download" \
-    	and install as /Applications/Xcode-$(XCODE_VER)/ or point HORNDIS_XCODE \
+    	download Xcode from: "https://developer.apple.com/download" \
+    	and install as /Applications/Xcode)/ or point HORNDIS_XCODE \
     	to your preferred Xcode app path)
 endif
 
